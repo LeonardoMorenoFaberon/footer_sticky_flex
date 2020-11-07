@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --margin-top_menu_li: 5px;
+  --color-selected: #ec662a;
+  --margen-lateral_header: 100px;
+}
+body {
+  background-color: black;
+  display:flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: black;
+  line-height: 40px;
+  /*height: 50px;*/ /*podemos hacer eso o hacer line-heigh: 50 ya con esto se centra vertical por si solo*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid var(--color-selected);
+  margin: 0 var(--margen-lateral_header);
+}
+
+  .header .logo {
+    height: 60px;
+  }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      width: 600px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .menu li {
+      list-style: none;
+      /* background-color: yellowgreen; */
+      padding: var(--margin-top_menu_li) 15px var(--margin-top_menu_li) 15px;
+      color: white;
+      font-family: arial;
+    }
+
+        .menu li:hover{
+          border-top: var(--margin-top_menu_li) solid var(--color-selected);
+          padding: 0px 15px var(--margin-top_menu_li) 15px;
+          color: orange;
+        }
+        
+        .menu .li_a{
+          text-decoration: none;
+          color: white;
+        }
+
+        .menu li:hover .li_a{
+          color: var(--color-selected);
+        }
+
+      .menu .button {
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid var(--color-selected);
+        background-color: gray;
+        color: white;
+        appearance: none;
+        text-rendering: unset;
+        font-family: arial;
+        width: 160px;
+        font-size: 1em;
+      }
+
+  .menu .button:hover {
+    background-color: var(--color-selected);
+    font-weight: bold;
+  }
+/*header termino------------------------------------------------------------------------------------------*/
+/*section1-------------------------------------------------*/
+.section1 {
+  margin: 0 var(--margen-lateral_header);
+}
+
+
+
+      .section1 .aprendido p {
+        color: white;
+      }
+/*section1*/
+
+/*footer---------------------------------------------------------------------------------------------------*/
+.footer {
+  color: var(--color-selected);
+  font-size: 2em;
+  border-top: 5px solid var(--color-selected);
+  margin: 0 var(--margen-lateral_header);
+}
+
